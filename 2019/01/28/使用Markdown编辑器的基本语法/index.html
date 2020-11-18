@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -21,19 +21,19 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"19981115.xyz","root":"/","images":"/images","scheme":"Pisces","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"بحث...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"19981115.xyz","root":"/","images":"/images","scheme":"Pisces","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
-  <meta name="description" content="主要内容 Markdown是什么？谁创造了它？为什么要使用它？怎么使用？谁在用？尝试一下 正文1. Markdown是什么？Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。     2. 谁创造了它？它由Aaron Swartz和John Grube">
+  <meta name="description" content="它以纯文本形式(*易读、易写、易更改*)编写文档，并最终以HTML格式发布。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Markdown编辑器的基本语法">
 <meta property="og:url" content="https://19981115.xyz/2019/01/28/%E4%BD%BF%E7%94%A8Markdown%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/index.html">
 <meta property="og:site_name" content="Xiaobai&#39;Blog">
-<meta property="og:description" content="主要内容 Markdown是什么？谁创造了它？为什么要使用它？怎么使用？谁在用？尝试一下 正文1. Markdown是什么？Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。Markdown也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。     2. 谁创造了它？它由Aaron Swartz和John Grube">
-<meta property="og:locale">
+<meta property="og:description" content="它以纯文本形式(*易读、易写、易更改*)编写文档，并最终以HTML格式发布。">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://19981115.xyz/2019/01/28/%E4%BD%BF%E7%94%A8Markdown%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/Aaron_Swartz.jpg">
 <meta property="article:published_time" content="2019-01-28T14:08:21.000Z">
-<meta property="article:modified_time" content="2020-03-17T05:12:50.345Z">
+<meta property="article:modified_time" content="2020-11-18T01:59:04.202Z">
 <meta property="article:author" content="小白">
 <meta property="article:tag" content="Markdown">
 <meta name="twitter:card" content="summary">
@@ -49,7 +49,7 @@
     sidebar: "",
     isHome : false,
     isPost : true,
-    lang   : 'zh'
+    lang   : 'zh-CN'
   };
 </script>
 
@@ -105,7 +105,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="تشغيل شريط التصفح">
+    <div class="toggle" aria-label="切换导航栏">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -135,31 +135,31 @@
   <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>معلومات</a>
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>الوسوم</a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>التصنيفات</a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>الأرشيفات</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>بحث
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -175,7 +175,7 @@
   </span>
   <div class="search-input-container">
     <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="بحث..." spellcheck="false"
+           placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
   <span class="popup-btn-close">
@@ -205,17 +205,17 @@
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          المحتويات
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          عام
+          站点概览
         </li>
       </ul>
 
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">主要内容</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Markdown%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.0.1.</span> <span class="nav-text">Markdown是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%81%E5%88%9B%E9%80%A0%E4%BA%86%E5%AE%83%EF%BC%9F"><span class="nav-number">1.0.2.</span> <span class="nav-text">谁创造了它？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8%E5%AE%83%EF%BC%9F"><span class="nav-number">1.0.3.</span> <span class="nav-text">为什么要使用它？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8%EF%BC%9F"><span class="nav-number">1.0.4.</span> <span class="nav-text">怎么使用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%81%E5%9C%A8%E7%94%A8%EF%BC%9F"><span class="nav-number">1.0.5.</span> <span class="nav-text">谁在用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%9D%E8%AF%95%E4%B8%80%E4%B8%8B"><span class="nav-number">1.0.6.</span> <span class="nav-text">尝试一下</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E6%96%87"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Markdown%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">2.1.</span> <span class="nav-text">1. Markdown是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E8%B0%81%E5%88%9B%E9%80%A0%E4%BA%86%E5%AE%83%EF%BC%9F"><span class="nav-number">2.2.</span> <span class="nav-text">2. 谁创造了它？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8%E5%AE%83%EF%BC%9F"><span class="nav-number">2.3.</span> <span class="nav-text">3. 为什么要使用它？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8%EF%BC%9F"><span class="nav-number">2.4.</span> <span class="nav-text">4. 怎么使用？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-%E6%A0%87%E9%A2%98"><span class="nav-number">2.4.1.</span> <span class="nav-text">4.1 标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number"></span> <span class="nav-text">一级标题   </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98-1"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98-1"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-%E6%AE%B5%E8%90%BD"><span class="nav-number">1.1.2.</span> <span class="nav-text">4.2 段落</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8"><span class="nav-number">1.1.3.</span> <span class="nav-text">4.3 区块引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-%E4%BB%A3%E7%A0%81%E5%8C%BA%E5%9D%97"><span class="nav-number">1.1.4.</span> <span class="nav-text">4.4 代码区块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-%E5%BC%BA%E8%B0%83"><span class="nav-number">1.1.5.</span> <span class="nav-text">4.5 强调</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-6-%E5%88%97%E8%A1%A8"><span class="nav-number">1.1.6.</span> <span class="nav-text">4.6 列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-7-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">1.1.7.</span> <span class="nav-text">4.7 分割线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-8-%E9%93%BE%E6%8E%A5"><span class="nav-number">1.1.8.</span> <span class="nav-text">4.8 链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-9-%E5%9B%BE%E7%89%87"><span class="nav-number">1.1.9.</span> <span class="nav-text">4.9 图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-10-%E5%8F%8D%E6%96%9C%E6%9D%A0"><span class="nav-number">1.1.10.</span> <span class="nav-text">4.10 反斜杠\</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-11-%E7%AC%A6%E5%8F%B7%E2%80%99-%E2%80%99"><span class="nav-number">1.1.11.</span> <span class="nav-text">4.11 符号’&#96;’</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-%E8%B0%81%E5%9C%A8%E7%94%A8%EF%BC%9F"><span class="nav-number">1.1.12.</span> <span class="nav-text">5. 谁在用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-%E5%B0%9D%E8%AF%95%E4%B8%80%E4%B8%8B"><span class="nav-number">1.1.13.</span> <span class="nav-text">6. 尝试一下</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E5%AE%83%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">其它：</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">主要内容</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Markdown%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.0.1.</span> <span class="nav-text">Markdown是什么？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%81%E5%88%9B%E9%80%A0%E4%BA%86%E5%AE%83%EF%BC%9F"><span class="nav-number">1.0.2.</span> <span class="nav-text">谁创造了它？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8%E5%AE%83%EF%BC%9F"><span class="nav-number">1.0.3.</span> <span class="nav-text">为什么要使用它？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8%EF%BC%9F"><span class="nav-number">1.0.4.</span> <span class="nav-text">怎么使用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%81%E5%9C%A8%E7%94%A8%EF%BC%9F"><span class="nav-number">1.0.5.</span> <span class="nav-text">谁在用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%9D%E8%AF%95%E4%B8%80%E4%B8%8B"><span class="nav-number">1.0.6.</span> <span class="nav-text">尝试一下</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E6%96%87"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Markdown%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">2.1.</span> <span class="nav-text">1. Markdown是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E8%B0%81%E5%88%9B%E9%80%A0%E4%BA%86%E5%AE%83%EF%BC%9F"><span class="nav-number">2.2.</span> <span class="nav-text">2. 谁创造了它？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8%E5%AE%83%EF%BC%9F"><span class="nav-number">2.3.</span> <span class="nav-text">3. 为什么要使用它？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8%EF%BC%9F"><span class="nav-number">2.4.</span> <span class="nav-text">4. 怎么使用？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1-%E6%A0%87%E9%A2%98"><span class="nav-number">2.4.1.</span> <span class="nav-text">4.1 标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number"></span> <span class="nav-text">一级标题  </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98-1"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-%E6%AE%B5%E8%90%BD"><span class="nav-number">1.1.2.</span> <span class="nav-text">4.2 段落</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8"><span class="nav-number">1.1.3.</span> <span class="nav-text">4.3 区块引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-4-%E4%BB%A3%E7%A0%81%E5%8C%BA%E5%9D%97"><span class="nav-number">1.1.4.</span> <span class="nav-text">4.4 代码区块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-5-%E5%BC%BA%E8%B0%83"><span class="nav-number">1.1.5.</span> <span class="nav-text">4.5 强调</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-6-%E5%88%97%E8%A1%A8"><span class="nav-number">1.1.6.</span> <span class="nav-text">4.6 列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-7-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="nav-number">1.1.7.</span> <span class="nav-text">4.7 分割线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-8-%E9%93%BE%E6%8E%A5"><span class="nav-number">1.1.8.</span> <span class="nav-text">4.8 链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-9-%E5%9B%BE%E7%89%87"><span class="nav-number">1.1.9.</span> <span class="nav-text">4.9 图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-10-%E5%8F%8D%E6%96%9C%E6%9D%A0"><span class="nav-number">1.1.10.</span> <span class="nav-text">4.10 反斜杠\</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-11-%E7%AC%A6%E5%8F%B7%E2%80%99-%E2%80%99"><span class="nav-number">1.1.11.</span> <span class="nav-text">4.11 符号’&#96;’</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-%E8%B0%81%E5%9C%A8%E7%94%A8%EF%BC%9F"><span class="nav-number">1.1.12.</span> <span class="nav-text">5. 谁在用？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-%E5%B0%9D%E8%AF%95%E4%B8%80%E4%B8%8B"><span class="nav-number">1.1.13.</span> <span class="nav-text">6. 尝试一下</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E5%AE%83%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">其它：</span></a></li></ol></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -231,17 +231,17 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
-          <span class="site-state-item-name">المقالات</span>
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
         <span class="site-state-item-count">7</span>
-        <span class="site-state-item-name">التصنيفات</span>
+        <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">15</span>
-        <span class="site-state-item-name">الوسوم</span>
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -300,7 +300,7 @@
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://19981115.xyz/2019/01/28/%E4%BD%BF%E7%94%A8Markdown%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -323,22 +323,22 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">نُشر في</span>
+      <span class="post-meta-item-text">发表于</span>
 
-      <time title="أُنشأ: 2019-01-28 22:08:21" itemprop="dateCreated datePublished" datetime="2019-01-28T22:08:21+08:00">2019-01-28</time>
+      <time title="创建时间：2019-01-28 22:08:21" itemprop="dateCreated datePublished" datetime="2019-01-28T22:08:21+08:00">2019-01-28</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
-        <span class="post-meta-item-text">عُدل في</span>
-        <time title="عُدل: 2020-03-17 13:12:50" itemprop="dateModified" datetime="2020-03-17T13:12:50+08:00">2020-03-17</time>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-11-18 09:59:04" itemprop="dateModified" datetime="2020-11-18T09:59:04+08:00">2020-11-18</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">في</span>
+      <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
         </span>
@@ -347,6 +347,7 @@
   
 </div>
 
+            <div class="post-description">它以纯文本形式(*易读、易写、易更改*)编写文档，并最终以HTML格式发布。</div>
         </div>
       </header>
 
@@ -356,57 +357,59 @@
     <div class="post-body" itemprop="articleBody">
         <h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><blockquote>
 <h4 id="Markdown是什么？"><a href="#Markdown是什么？" class="headerlink" title="Markdown是什么？"></a>Markdown<em>是什么</em>？</h4><h4 id="谁创造了它？"><a href="#谁创造了它？" class="headerlink" title="谁创造了它？"></a><em>谁</em>创造了它？</h4><h4 id="为什么要使用它？"><a href="#为什么要使用它？" class="headerlink" title="为什么要使用它？"></a><em>为什么</em>要使用它？</h4><h4 id="怎么使用？"><a href="#怎么使用？" class="headerlink" title="怎么使用？"></a><em>怎么</em>使用？</h4><h4 id="谁在用？"><a href="#谁在用？" class="headerlink" title="谁在用？"></a><em>谁</em>在用？</h4><h4 id="尝试一下"><a href="#尝试一下" class="headerlink" title="尝试一下"></a>尝试一下</h4></blockquote>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="1-Markdown是什么？"><a href="#1-Markdown是什么？" class="headerlink" title="1. Markdown是什么？"></a>1. Markdown<em>是什么</em>？</h3><p><strong>Markdown</strong>是一种轻量级<strong>标记语言</strong>，它以纯文本形式(<em>易读、易写、易更改</em>)编写文档，并最终以HTML格式发布。<br><strong>Markdown</strong>也可以理解为将以MARKDOWN语法编写的语言转换成HTML内容的工具。    </p>
-<h3 id="2-谁创造了它？"><a href="#2-谁创造了它？" class="headerlink" title="2. 谁创造了它？"></a>2. <em>谁</em>创造了它？</h3><p>它由<a target="_blank" rel="noopener" href="http://www.aaronsw.com/"><strong>Aaron Swartz</strong></a>和<strong>John Gruber</strong>共同设计，<strong>Aaron Swartz</strong>就是那位于去年（<em>2013年1月11日</em>）自杀,有着<strong>开挂</strong>一般人生经历的程序员。维基百科对他的<a target="_blank" rel="noopener" href="http://zh.wikipedia.org/wiki/%E4%BA%9A%E4%BC%A6%C2%B7%E6%96%AF%E6%B2%83%E8%8C%A8">介绍</a>是：<strong>软件工程师、作家、政治组织者、互联网活动家、维基百科人</strong>。    </p>
-<p>他有着足以让你跪拜的人生经历：    </p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="1-Markdown是什么？"><a href="#1-Markdown是什么？" class="headerlink" title="1. Markdown是什么？"></a>1. Markdown<em>是什么</em>？</h3><p><strong>Markdown</strong>是一种轻量级<strong>标记语言</strong>，它以纯文本形式(<em>易读、易写、易更改</em>)编写文档，并最终以 HTML 格式发布。<br><strong>Markdown</strong>也可以理解为将以 MARKDOWN 语法编写的语言转换成 HTML 内容的工具。</p>
+<h3 id="2-谁创造了它？"><a href="#2-谁创造了它？" class="headerlink" title="2. 谁创造了它？"></a>2. <em>谁</em>创造了它？</h3><p>它由<a target="_blank" rel="noopener" href="http://www.aaronsw.com/"><strong>Aaron Swartz</strong></a>和<strong>John Gruber</strong>共同设计，<strong>Aaron Swartz</strong>就是那位于去年（_2013 年 1 月 11 日_）自杀,有着<strong>开挂</strong>一般人生经历的程序员。维基百科对他的<a target="_blank" rel="noopener" href="http://zh.wikipedia.org/wiki/%E4%BA%9A%E4%BC%A6%C2%B7%E6%96%AF%E6%B2%83%E8%8C%A8">介绍</a>是：<strong>软件工程师、作家、政治组织者、互联网活动家、维基百科人</strong>。</p>
+<p>他有着足以让你跪拜的人生经历：</p>
 <ul>
-<li><strong>14岁</strong>参与RSS 1.0规格标准的制订。     </li>
-<li><strong>2004</strong>年入读<strong>斯坦福</strong>，之后退学。   </li>
-<li><strong>2005</strong>年创建<a target="_blank" rel="noopener" href="http://infogami.org/">Infogami</a>，之后与<a target="_blank" rel="noopener" href="http://www.reddit.com/">Reddit</a>合并成为其合伙人。   </li>
-<li><strong>2010</strong>年创立求进会（Demand Progress），积极参与禁止网络盗版法案（SOPA）活动，最终该提案被撤回。   </li>
-<li><strong>2011</strong>年7月19日，因被控从MIT和JSTOR下载480万篇学术论文并以免费形式上传于网络被捕。     </li>
-<li><strong>2013</strong>年1月自杀身亡。    </li>
+<li><strong>14 岁</strong>参与 RSS 1.0 规格标准的制订。</li>
+<li><strong>2004</strong>年入读<strong>斯坦福</strong>，之后退学。</li>
+<li><strong>2005</strong>年创建<a target="_blank" rel="noopener" href="http://infogami.org/">Infogami</a>，之后与<a target="_blank" rel="noopener" href="http://www.reddit.com/">Reddit</a>合并成为其合伙人。</li>
+<li><strong>2010</strong>年创立求进会（Demand Progress），积极参与禁止网络盗版法案（SOPA）活动，最终该提案被撤回。</li>
+<li><strong>2011</strong>年 7 月 19 日，因被控从 MIT 和 JSTOR 下载 480 万篇学术论文并以免费形式上传于网络被捕。</li>
+<li><strong>2013</strong>年 1 月自杀身亡。</li>
 </ul>
 <p><img src="Aaron_Swartz.jpg" alt="Aaron Swartz"></p>
 <p>天才都有早逝的归途。</p>
 <h3 id="3-为什么要使用它？"><a href="#3-为什么要使用它？" class="headerlink" title="3. 为什么要使用它？"></a>3. <em>为什么</em>要使用它？</h3><ul>
 <li>它是易读（看起来舒服）、易写（语法简单）、易更改<strong>纯文本</strong>。处处体现着<strong>极简主义</strong>的影子。</li>
-<li>兼容HTML，可以转换为HTML格式发布。</li>
+<li>兼容 HTML，可以转换为 HTML 格式发布。</li>
 <li>跨平台使用。</li>
-<li>越来越多的网站支持Markdown。</li>
+<li>越来越多的网站支持 Markdown。</li>
 <li>更方便清晰地组织你的电子邮件。（Markdown-here, Airmail）</li>
-<li>摆脱Word（我不是认真的）。</li>
+<li>摆脱 Word（我不是认真的）。</li>
 </ul>
-<h3 id="4-怎么使用？"><a href="#4-怎么使用？" class="headerlink" title="4. 怎么使用？"></a>4. <em>怎么</em>使用？</h3><p>如果不算<strong>扩展</strong>，Markdown的语法绝对<strong>简单</strong>到让你爱不释手。</p>
-<p>Markdown语法主要分为如下几大部分：<br><strong>标题</strong>，<strong>段落</strong>，<strong>区块引用</strong>，<strong>代码区块</strong>，<strong>强调</strong>，<strong>列表</strong>，<strong>分割线</strong>，<strong>链接</strong>，<strong>图片</strong>，<strong>反斜杠 <code>\</code>**，</strong>符号’`’**。</p>
+<h3 id="4-怎么使用？"><a href="#4-怎么使用？" class="headerlink" title="4. 怎么使用？"></a>4. <em>怎么</em>使用？</h3><p>如果不算<strong>扩展</strong>，Markdown 的语法绝对<strong>简单</strong>到让你爱不释手。</p>
+<p>Markdown 语法主要分为如下几大部分：<br><strong>标题</strong>，<strong>段落</strong>，<strong>区块引用</strong>，<strong>代码区块</strong>，<strong>强调</strong>，<strong>列表</strong>，<strong>分割线</strong>，<strong>链接</strong>，<strong>图片</strong>，<strong>反斜杠 <code>\</code>**，</strong>符号’`’**。</p>
 <h4 id="4-1-标题"><a href="#4-1-标题" class="headerlink" title="4.1 标题"></a>4.1 标题</h4><p>两种形式：<br>1）使用<code>=</code>和<code>-</code>标记一级和二级标题。</p>
 <blockquote>
 <p>一级标题<br><code>=========</code><br>二级标题<br><code>---------</code></p>
 </blockquote>
 <p>效果：</p>
 <blockquote>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题   "></a>一级标题   </h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2></blockquote>
-<p>2）使用<code>#</code>，可表示1-6级标题。</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题  "></a>一级标题  </h1><p>二级标题</p>
+<hr>
+</blockquote>
+<p>2）使用<code>#</code>，可表示 1-6 级标题。</p>
 <blockquote>
-<p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题    </p>
+<p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题</p>
 </blockquote>
 <p>效果：</p>
 <blockquote>
-<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
 <h4 id="4-2-段落"><a href="#4-2-段落" class="headerlink" title="4.2 段落"></a>4.2 段落</h4><p>段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用<strong>两个以上</strong>空格加上回车（引用中换行省略回车）。</p>
 <h4 id="4-3-区块引用"><a href="#4-3-区块引用" class="headerlink" title="4.3 区块引用"></a>4.3 区块引用</h4><p>在段落的每行或者只在第一行使用符号<code>&gt;</code>,还可使用多个嵌套引用，如：</p>
 <blockquote>
-<p>&gt; 区块引用<br>&gt;&gt; 嵌套引用  </p>
+<p>&gt; 区块引用<br>&gt;&gt; 嵌套引用</p>
 </blockquote>
 <p>效果：</p>
 <blockquote>
-<p>区块引用  </p>
+<p>区块引用</p>
 <blockquote>
 <p>嵌套引用</p>
 </blockquote>
 </blockquote>
-<h4 id="4-4-代码区块"><a href="#4-4-代码区块" class="headerlink" title="4.4 代码区块"></a>4.4 代码区块</h4><p>代码区块的建立是在每行加上4个空格或者一个制表符（如同写代码一样）。如<br>普通段落：</p>
-<p>void main()<br>{<br>    printf(“Hello, Markdown.”);<br>}    </p>
+<h4 id="4-4-代码区块"><a href="#4-4-代码区块" class="headerlink" title="4.4 代码区块"></a>4.4 代码区块</h4><p>代码区块的建立是在每行加上 4 个空格或者一个制表符（如同写代码一样）。如<br>普通段落：</p>
+<p>void main()<br>{<br> printf(“Hello, Markdown.”);<br>}</p>
 <p>代码区块：</p>
 <pre><code>void main()
 &#123;
@@ -419,13 +422,13 @@
 </blockquote>
 <p>效果：</p>
 <blockquote>
-<p><em>斜体</em>，<em>斜体</em><br><strong>粗体</strong>，<strong>粗体</strong></p>
+<p><em>斜体_，_斜体</em><br><strong>粗体</strong>，<strong>粗体</strong></p>
 </blockquote>
 <h4 id="4-6-列表"><a href="#4-6-列表" class="headerlink" title="4.6 列表"></a>4.6 列表</h4><p>使用<code>·</code>、<code>+</code>、或<code>-</code>标记无序列表，如：</p>
 <blockquote>
 <p>-（+*） 第一项<br>-（+*） 第二项<br>- （+*）第三项</p>
 </blockquote>
-<p><strong>注意</strong>：标记后面最少有一个_空格_或_制表符_。若不在引用区块中，必须和前方段落之间存在空行。</p>
+<p><strong>注意</strong>：标记后面最少有一个<em>空格</em>或<em>制表符</em>。若不在引用区块中，必须和前方段落之间存在空行。</p>
 <p>效果：</p>
 <blockquote>
 <ul>
@@ -436,7 +439,7 @@
 </blockquote>
 <p>有序列表的标记方式是将上述的符号换成数字,并辅以<code>.</code>，如：</p>
 <blockquote>
-<p>1 . 第一项<br>2 . 第二项<br>3 . 第三项    </p>
+<p>1 . 第一项<br>2 . 第二项<br>3 . 第三项</p>
 </blockquote>
 <p>效果：</p>
 <blockquote>
@@ -449,19 +452,19 @@
 <h4 id="4-7-分割线"><a href="#4-7-分割线" class="headerlink" title="4.7 分割线"></a>4.7 分割线</h4><p>分割线最常使用就是三个或以上<code>*</code>，还可以使用<code>-</code>和<code>_</code>。</p>
 <h4 id="4-8-链接"><a href="#4-8-链接" class="headerlink" title="4.8 链接"></a>4.8 链接</h4><p>链接可以由两种形式生成：<strong>行内式</strong>和<strong>参考式</strong>。<br><strong>行内式</strong>：</p>
 <blockquote>
-<p>[younghz的Markdown库](https:://github.com/younghz/Markdown “Markdown”)。</p>
+<p>[younghz 的 Markdown 库](https:://github.com/younghz/Markdown “Markdown”)。</p>
 </blockquote>
 <p>效果：</p>
 <blockquote>
-<p><a href="https:://github.com/younghz/Markdown" title="Markdown">younghz的Markdown库</a>。</p>
+<p><a href="https:://github.com/younghz/Markdown" title="Markdown">younghz 的 Markdown 库</a>。</p>
 </blockquote>
 <p><strong>参考式</strong>：</p>
 <blockquote>
-<p>[younghz的Markdown库1][1]<br>[younghz的Markdown库2][2]<br>[1]:https:://github.com/younghz/Markdown “Markdown”<br>[2]:https:://github.com/younghz/Markdown “Markdown”    </p>
+<p>[younghz 的 Markdown 库 1][1]<br>[younghz 的 Markdown 库 2][2]<br>[1]:https:://github.com/younghz/Markdown “Markdown”<br>[2]:https:://github.com/younghz/Markdown “Markdown”</p>
 </blockquote>
 <p>效果：</p>
 <blockquote>
-<p><a href="https:://github.com/younghz/Markdown" title="Markdown">younghz的Markdown库1</a><br><a href="https:://github.com/younghz/Markdown" title="Markdown">younghz的Markdown库2</a></p>
+<p><a href="https:://github.com/younghz/Markdown" title="Markdown">younghz 的 Markdown 库 1</a><br><a href="https:://github.com/younghz/Markdown" title="Markdown">younghz 的 Markdown 库 2</a></p>
 </blockquote>
 <p><strong>注意</strong>：上述的<code>[1]:https:://github.com/younghz/Markdown &quot;Markdown&quot;</code>不出现在区块中。</p>
 <h4 id="4-9-图片"><a href="#4-9-图片" class="headerlink" title="4.9 图片"></a>4.9 图片</h4><p>添加图片的形式和链接相似，只需在链接的基础上前方加一个<code>！</code>。</p>
@@ -472,9 +475,9 @@
 </blockquote>
 <p>效果：</p>
 <blockquote>
-<p><code>ctrl+a</code>    </p>
+<p><code>ctrl+a</code></p>
 </blockquote>
-<h4 id="5-谁在用？"><a href="#5-谁在用？" class="headerlink" title="5. 谁在用？"></a>5. <em>谁</em>在用？</h4><p>Markdown的使用者：</p>
+<h4 id="5-谁在用？"><a href="#5-谁在用？" class="headerlink" title="5. 谁在用？"></a>5. <em>谁</em>在用？</h4><p>Markdown 的使用者：</p>
 <ul>
 <li>GitHub</li>
 <li>简书</li>
@@ -486,17 +489,17 @@
 </ul>
 <h4 id="6-尝试一下"><a href="#6-尝试一下" class="headerlink" title="6. 尝试一下"></a>6. 尝试一下</h4><ul>
 <li><strong>Chrome</strong>下的插件诸如<code>stackedit</code>与<code>markdown-here</code>等非常方便，也不用担心平台受限。</li>
-<li><strong>在线</strong>的dillinger.io评价也不错   </li>
-<li><strong>Windowns</strong>下的MarkdownPad也用过，不过免费版的体验不是很好。    </li>
-<li><strong>Mac</strong>下的Mou是国人贡献的，口碑很好。</li>
-<li><strong>Linux</strong>下的ReText不错。    </li>
+<li><strong>在线</strong>的 dillinger.io 评价也不错</li>
+<li><strong>Windowns</strong>下的 MarkdownPad 也用过，不过免费版的体验不是很好。</li>
+<li><strong>Mac</strong>下的 Mou 是国人贡献的，口碑很好。</li>
+<li><strong>Linux</strong>下的 ReText 不错。</li>
 </ul>
 <p><strong>当然，最终境界永远都是笔下是语法，心中格式化 :)。</strong></p>
 <hr>
-<p><strong>注意</strong>：不同的Markdown解释器或工具对相应语法（扩展语法）的解释效果不尽相同，具体可参见工具的使用说明。<br>虽然有人想出面搞一个所谓的标准化的Markdown，[没想到还惹怒了健在的创始人John Gruber]<br>(<a target="_blank" rel="noopener" href="http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/)%E3%80%82">http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/)。</a></p>
+<p><strong>注意</strong>：不同的 Markdown 解释器或工具对相应语法（扩展语法）的解释效果不尽相同，具体可参见工具的使用说明。<br>虽然有人想出面搞一个所谓的标准化的 Markdown，[没想到还惹怒了健在的创始人 John Gruber]<br>(<a target="_blank" rel="noopener" href="http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/)%E3%80%82">http://blog.codinghorror.com/standard-markdown-is-now-common-markdown/)。</a></p>
 <hr>
-<p>以上基本是所有traditonal markdown的语法。</p>
-<h3 id="其它："><a href="#其它：" class="headerlink" title="其它："></a>其它：</h3><p>列表的使用(非traditonal markdown)：</p>
+<p>以上基本是所有 traditonal markdown 的语法。</p>
+<h3 id="其它："><a href="#其它：" class="headerlink" title="其它："></a>其它：</h3><p>列表的使用(非 traditonal markdown)：</p>
 <p>用<code>|</code>表示表格纵向边界，表头和表内容用<code>-</code>隔开，并可用<code>:</code>进行对齐设置，两边都有<code>:</code>则表示居中，若不加<code>:</code>则默认左对齐。</p>
 <table>
 <thead>
@@ -531,8 +534,8 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2019/01/17/2019%E5%B9%B41%E6%9C%8817%E6%97%A5-%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E6%88%91%E7%9A%84%E4%BB%8A%E5%A4%A9/" rel="prev" title="2019年1月17日-记录一下我的今天">
-                  <i class="fa fa-chevron-left"></i> 2019年1月17日-记录一下我的今天
+                <a href="/2019/01/16/hello-world/" rel="prev" title="使用Hexo搭建一个博客网站">
+                  <i class="fa fa-chevron-left"></i> 使用Hexo搭建一个博客网站
                 </a>
             </div>
             <div class="post-nav-item">
@@ -592,7 +595,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">小白</span>
 </div>
-  <div class="powered-by">تطبيق الموقع <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
     </div>
