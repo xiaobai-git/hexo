@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Xiaobai&#39;Blog</title>
   
-  <subtitle>爱生活爱博客</subtitle>
+  <subtitle>永远相信美好的事情即将发生</subtitle>
   <link href="https://19981115.xyz/atom.xml" rel="self"/>
   
   <link href="https://19981115.xyz/"/>
-  <updated>2020-11-21T10:28:58.357Z</updated>
+  <updated>2020-11-21T12:50:00.133Z</updated>
   <id>https://19981115.xyz/</id>
   
   <author>
@@ -21,8 +21,12 @@
     <link href="https://19981115.xyz/2020/11/21/%E6%9C%80%E6%96%B0HEXO%E5%8D%9A%E5%AE%A2NEXT%E4%B8%BB%E9%A2%98%E9%9A%90%E8%97%8F%E6%96%87%E7%AB%A0%E6%96%B9%E6%B3%95/"/>
     <id>https://19981115.xyz/2020/11/21/%E6%9C%80%E6%96%B0HEXO%E5%8D%9A%E5%AE%A2NEXT%E4%B8%BB%E9%A2%98%E9%9A%90%E8%97%8F%E6%96%87%E7%AB%A0%E6%96%B9%E6%B3%95/</id>
     <published>2020-11-21T10:28:58.000Z</published>
-    <updated>2020-11-21T10:28:58.357Z</updated>
+    <updated>2020-11-21T12:50:00.133Z</updated>
     
+    <content type="html"><![CDATA[<p>其实方法很简单，打开主题首页对应的文件，添加一个判断即可</p><p>打开文件<code>\themes\next\layout\index.njk</code>文件，大概在11行把</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; partial(&#39;_macro&#x2F;post.njk&#39;, &#123;post: post, is_index: true&#125;) &#125;&#125;</span><br></pre></td></tr></table></figure><p>替换为以下代码即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;%- if post.hide !&#x3D; true %&#125;</span><br><span class="line">&#123;&#123; partial(&#39;_macro&#x2F;post.njk&#39;, &#123;post: post, is_index: true&#125;) &#125;&#125;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure><p>如图</p><p><img src="/2020/11/21/%E6%9C%80%E6%96%B0HEXO%E5%8D%9A%E5%AE%A2NEXT%E4%B8%BB%E9%A2%98%E9%9A%90%E8%97%8F%E6%96%87%E7%AB%A0%E6%96%B9%E6%B3%95/2020-11-21203459.png" alt="代码页截图"></p><p>然后在post文章头中加入<code>hide:true</code>即可实现首页文章隐藏，true为隐藏false或者不写则为显示</p><p>建议直接在<code>/scaffolds/post.md</code>中直接添加<code>hide:false</code>，即可实现新建文章自动添加</p><p>在分类或者标签中实现隐藏也是同理</p>]]></content>
+    
+    
+    <summary type="html">其实方法很简单，打开主题首页对应的文件，添加一个判断即可,打开文件\themes\next\layout\index.njk文件</summary>
     
     
     
